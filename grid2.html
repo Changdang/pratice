@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>grid2</title>
+  <style>
+    body {
+      background-color: #DAD1F6;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .wrapper > div {
+      background-color: #8AA1D5;
+      padding: 1em;
+    }
+
+    .wrapper > div:nth-child(odd) {
+      background-color: #FFEE9B;
+    }
+
+    .wrapper {
+      display: grid;
+      /*grid-template-columns: 1fr 2fr 1fr; */
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 1em;
+      grid-auto-rows: 100px;
+      grid-auto-rows: minmax(100px, auto);
+    }
+
+    .nested {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-auto-rows: 50px;
+      grid-gap:1em;
+
+    }
+
+    .nested > div {
+      border: 1px solid black;
+      padding: 1em;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+<div class="wrapper">
+  <div>
+    Lorem ipsum dolor sit amet.
+  </div>
+  <div>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat eaque explicabo ratione beatae non soluta quasi, incidunt suscipit cum illo officiis esse, fuga, a earum. Quia, rerum cum voluptate quae fuga molestias similique, rem ipsam, ad consequatur velit deserunt. Et.
+  </div>
+  <div class="nested">
+    <div>lorem</div>
+    <div>lorem</div>
+    <div>lorem</div>
+    <div>lorem</div>
+    <div>lorem</div>
+    <div>lorem</div>
+    <div>lorem</div>
+    <div>lorem</div>
+    <div>lorem</div>
+    <div>lorem</div>
+    <div>lorem</div>
+    <div>lorem</div>
+  </div>
+  <div>
+    Lorem ipsum dolor sit amet.
+  </div>
+  <div>
+    Lorem ipsum dolor sit amet.
+  </div>
+  <div>
+    Lorem ipsum dolor sit amet.
+  </div>
+  <div>
+    Lorem ipsum dolor sit amet.
+  </div>
+</div>
+</body>
+</html>

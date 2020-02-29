@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>lets learn Javascript</title>
+</head>
+<body>
+  <nav>
+    <ol style="list-style-type:square;">
+      <li> <a href="#whatcanjavascriptdo"> What can Javascript do? </a></li>
+    </ol>
+
+
+  </nav>
+
+  <h2 id="whatcanjavascriptdo">
+    What can Javascript do?
+  </h2>
+
+  <ol>
+    <li>
+      <p id="changecontent"> Javascript can change HTML content</p>
+      <button type="button" onclick='document.getElementById("changecontent").innerHTML = "Hello Javascript!"'>Click me!</button>
+    </li>
+
+    <li>
+      <p>JavaScript can change HTML attribute values.</p>
+
+      <p>JavaScript changes the value of the src (source) attribute of an image.</p>
+
+      <button onclick="document.getElementById('myImage').src='image\pic_bulboff.gif'">Turn on the light</button>
+
+      <img id="myImage" src="image\pic_bulboff.gif" style="width:100px">
+
+      <button onclick="document.getElementById('myImage').src='image\pic_bulboff.gif'">Turn off the light</button>
+
+    </li>
+
+    <li>
+      <p id="style"> Javascript can change the style of HTML elemen </p>
+      <button type ="button" onclick="document.getElementById('style').style.fontSize='50px'">
+        click me!
+      </button>
+    </li>
+
+    <li>
+      <p id="hide"> JavaScript can hide HTML element</p>
+      <button type="button" onclick="document.getElementById('hide').style.display='none'">
+        Click me!
+      </button>
+    </li>
+
+    <li>
+      <p>JavaScript can show hidden HTML elements.</p>
+      <p id="show" style="display:none">Hellooooo</p>
+      <button type="button" onclick="document.getElementById('show').style.display='block'">
+        Click me!
+      </button>
+
+
+    </li>
+
+
+
+
+
+
+
+
+
+
+ </ol>
+
+
+
+
+</body>
+</html>

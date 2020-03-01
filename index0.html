@@ -32,6 +32,7 @@
         <li> <a href="#wheretoinsertJavascript"> Where to insert JavaScript? </a> </li>
         <li><a href="#introductiontoJavaScript"> Introduction to JavaScript </a></li>
         <li><a href="#variables"> Variables </a></li>
+        <li><a href="#conditionalStatements"> Conditional Statements</a></li>
 
       </ol>
     </nav>
@@ -127,33 +128,53 @@
       <h2 id="variables">
         Variables
       </h2>
-      <p> Variables are not values; they act like containers containing values and represent them with a name. There are 3 keywords to declare a variable. They are var, let (can reassign values) and const(can not reassign values). Let and const have been introduced since 2016 in ES6. var and let can first declare varibles without values while const doesnt. 
-      </p>
-      <p>
-        <pre>
-        var myName = 'Trang';
-        console.log(myName);
-        // Output: Trang
-      </pre>
-      </p>
-      <p>
-        <pre>
+        <p>
+          Variables are not values but they act like containers containing values and represent them with a name. There are 3 keywords to declare a variable. They are var, let (can reassign values) and const (can not reassign values). Let and const have been introduced since 2016 in ES6. var and let can first declare varibles without values and add later while const doesnt.
+        </p>
+        <p>
+          <pre>
+          var myName = 'Trang';
+          console.log(myName);
+          // Output: Trang
+        </pre>
+        </p>
+        <p>
+          <pre>
           let meal = 'Enchiladas';
           console.log(meal); // Output: Enchiladas
           meal = 'Burrito';
           console.log(meal); // Output: Burrito
-        </pre>
-      </p>
-      <p>
-        <pre>
+          </pre>
+        </p>
+        <p>
+          <pre>
           let price;
           console.log(price); // Output: undefined
           price = 350;
           console.log(price); // Output: 350
-        </pre>
-      </p>
-
+          </pre>
+        </p>
+        <ol>
+          <li>Variables hold reusable data in a program and associate it with a name. </li>
+          <li>Variables are stored in memory. </li>
+          <li>The var keyword is used in pre-ES6 versions of JS.</li>
+          <li>let is the preferred way to declare a variable when it can be reassigned, and const is the preferred way to declare a variable with a constant value. </li>
+          <li>Variables that have not been initialized store the primitive data type undefined. </li>
+          <li>Mathematical assignment operators (+=, -=, *=, /m, ++, --) make it easy to calculate a new value and assign it to the same variable.</li>
+          <li>The + operator is used to concatenate strings including string values held in variables. </li>
+          <li>In ES6, template literals use backticks ` and ${} to interpolate values into a string. </li>
+          <li>The typeof keyword returns the data type (as a string) of a value.</li>
+        </ol>
     </section>
+
+    <section>
+      <h2 id="conditionalStatements">
+        Conditional Statements
+      </h2>
+    </section>
+
+
+    
   </div>
 
   <script src="hoc.js">

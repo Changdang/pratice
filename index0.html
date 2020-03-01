@@ -4,41 +4,45 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>lets learn Javascript</title>
+  <title>JavaScript</title>
   <style>
 
     body{margin-left: auto;
         margin-right: auto;
         width: 800px;
+        font-family: Helvetica, sans-serif;
     }
 
     header {text-align: center;
+            font-weight: bold;
     }
 
   </style>
 </head>
 <body>
   <div class="container">
+
     <header>
       <h1> LETS LEARN JAVASCRIPT! </h1>
     </header>
+
     <nav>
       <ol style="list-style-type:square;">
-        <li> <a href="#whatcanjavascriptdo"> What can Javascript do? </a></li>
-        <li> <a href="#wheretoinsertJavascript"> Where to insert Javascript? </a> </li>
+        <li> <a href="#whatcanjavascriptdo"> What can JavaScript do? </a></li>
+        <li> <a href="#wheretoinsertJavascript"> Where to insert JavaScript? </a> </li>
 
       </ol>
-
-
     </nav>
+
     <section >
+
       <h2 id="whatcanjavascriptdo">
-        What can Javascript do?
+        What can JavaScript do?
       </h2>
 
       <ol>
         <li>
-          <p id="changecontent"> Javascript can change HTML content</p>
+          <p id="changecontent"> JavasSript can change HTML content</p>
           <button type="button" onclick='document.getElementById("changecontent").innerHTML = "Hello Javascript!"'>Click me!</button>
         </li>
 
@@ -56,7 +60,7 @@
         </li>
 
         <li>
-          <p id="style"> Javascript can change the style of HTML elemen </p>
+          <p id="style"> JavaScript can change the style of HTML elemen </p>
           <button type ="button" onclick="document.getElementById('style').style.fontSize='50px'">
             click me!
           </button>
@@ -80,11 +84,25 @@
     </section>
 
     <section id="wheretoinsertJavascript">
-      <h2> Where to insert Javascript?</h2>
+      <h2> Where to insert JavaScript?</h2>
+      <ol>
+        <li>
+          <p>In the &lt body &gt </p>
+
+          <p class="codepen" data-height="265" data-theme-id="dark" data-default-tab="html,result" data-user="changdang" data-slug-hash="JjdJWzo" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="JjdJWzo">
+            <span>See the Pen <a href="https://codepen.io/changdang/pen/JjdJWzo">
+            JjdJWzo</a> by Changdang (<a href="https://codepen.io/changdang">@changdang</a>)
+            on <a href="https://codepen.io">CodePen</a>.</span>
+          </p>
+          <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+
+          <p> Function is a block of JavaScript codes that will be executed when it is called for or invoked</p>
+        </li>
+        <li> In the &lt head &gt </li>
+        <li> In the internal link with the file extension .js </li>
+        <li> In the external link with the path of script file added in src attribute of a &lt script &gt tag.</li>
+      </ol>
     </section>
-
-
-
 
   </div>
 </body>

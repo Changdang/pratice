@@ -23,3 +23,10 @@ function dientichhinhtron(r){
 }
 
 dientichhinhtron(3)
+
+let trangWords = 'Adrian minds';
+
+if (trangWords === 'Adrian minds'){
+        console.log('Trang is not matter to Adrian. Because he minds Trangs words'); } else {
+        console.log ('this else statement is never printed in the console. Because the if statement is correct!');
+}

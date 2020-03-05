@@ -30,3 +30,5 @@ if (trangWords === 'Adrian minds'){
         console.log('Trang is not matter to Adrian. Because he minds Trangs words'); } else {
         console.log ('this else statement is never printed in the console. Because the if statement is correct!');
 }
+
+prompt ('My channel is private. Do you want to countinue? ');

@@ -24,6 +24,7 @@ function dientichhinhtron(r){
 
 dientichhinhtron(3)
 
+//pratice if
 let trangWords = 'Adrian minds';
 
 if (trangWords === 'Adrian minds'){
@@ -35,9 +36,24 @@ if (trangWords === 'Adrian minds'){
 
 var name = prompt ('What is your name?');
 
+//learn function
+
 function greeting(yourName) {
       var result = 'Hello ' + yourName;
       console.log(result);
 }
 
 greeting(name);
+
+
+// learn function
+function numOfMonitor(rows, columns){
+  return rows*columns;
+};
+
+function costOfMonitor(rows, columns){
+  return numOfMonitor(rows, columns)*200;
+};
+
+const totalMonitor = costOfMonitor(5,4);
+console.log (totalMonitor);

@@ -34,7 +34,7 @@ if (trangWords === 'Adrian minds'){
 
 
 
-var name = prompt ('What is your name?');
+//var name = prompt ('What is your name?');
 
 //learn function
 
@@ -57,3 +57,10 @@ function costOfMonitor(rows, columns){
 
 const totalMonitor = costOfMonitor(5,4);
 console.log (totalMonitor);
+
+
+const logSkyColor = () => {
+  let color = 'blue';
+  console.log(color); // blue
+};
+console.log(logSkyColor(green));

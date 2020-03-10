@@ -63,4 +63,3 @@ const logSkyColor = () => {
   let color = 'blue';
   console.log(color); // blue
 };
-console.log(logSkyColor(green));

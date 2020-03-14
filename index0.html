@@ -37,7 +37,8 @@
         <li><a href="#scope"> Scope </a></li>
         <li><a href="#array"> Array </a></li>
         <li><a href="#loops"> Loops </a></li>
-
+        <li><a href="#iterator"> Iterator methods</a></li>
+        <li><a href="#object"> Object </a></li>
       </ol>
     </nav>
 
@@ -214,6 +215,33 @@
     <section>
       <h2 id="loops"> Loops </h2>
       <p>Need to learn again. while and do while loops are too abstract</p>
+    </section>
+
+    <section>
+      <h2 id="iterator"> Iterator method </h2>
+      <ol>
+          <li> .forEach() is used to execute the same code on every element in an array but does not change the array and returns undefined. </li>
+          <li> .map() executes the same code on every element in an array and returns a new array with the updated elements. </li>
+          <li> .filter() checks every element in an array to see if it meets certain criteria and returns a new array with the elements that return truthy for the criteria. </li>
+          <li> .findIndex() returns the index of the first element of an array which satisfies a condition in the callback function. It returns -1 if none of the elements in the array satisfies the condition. </li>
+          <li> .reduce() iterates through an array and takes the values of the elements and returns a single value. </li>
+          <li> All iterator methods takes a callback function that can be pre-defined, or a function expression, or an arrow function. <li>
+      </ol>
+    </section>
+
+    <section>
+      <h2 id="object"> Object </h2>
+      <ol>
+        <li> Objects store collections of key-value pairs.</li>
+        <li> Each key-value pair is a property—when a property is a function it is known as a method. </li>
+        <li> An object literal is composed of comma-separated key-value pairs surrounded by curly braces. </li>
+        <li> You can access, add or edit a property within an object by using dot notation or bracket notation. </li>
+        <li> We can add methods to our object literals using key-value syntax with anonymous function expressions as values or by using the new ES6 method syntax.</li>
+        <li> We can navigate complex, nested objects by chaining operators.
+        <li> Objects are mutable—we can change their properties even when they’re declared with const. </li>
+        <li>Objects are passed by reference— when we make changes to an object passed into a function, those changes are permanent.</li>
+        We can iterate through objects using the For...in syntax.</li>
+      </ol>
     </section>
 
 

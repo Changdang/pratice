@@ -2,7 +2,7 @@ body {
   font-family: 'Lato', sans-serif;
   margin: 0;
   padding: 0;
-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 header {
@@ -94,4 +94,53 @@ li {
 #submit:hover{
   background-color: orange;
   transition: background-color 1s;
+}
+
+.container {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+#feature {
+  margin-top: 30px;
+}
+
+.grid {
+  display: flex;
+}
+
+#features .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: darkorange;
+  height: 125px;
+  width: 20vw;
+}
+.fa {
+  display: inline-block;
+  height: 48px;
+  width: 48px;
+}
+
+.fa-3x {
+  font-size: 3em;
+}
+
+#features .mesc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 125px;
+  width: 80vw;
+  padding: 5px;
+}
+
+.mesc  h2 {
+  margin: 0;
+}
+
+.mesc  p {
+  margin: 0;
 }

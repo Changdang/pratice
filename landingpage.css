@@ -239,18 +239,17 @@ li {
   justify-content: center;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   #pricing {
     flex-direction: column;
     align-items: center;
     align-items: center;
   }
-  .product {
+  div .product {
     max-width: 300px;
     width: 100%;
     margin: 0 auto;
     margin-bottom: 10px;
-
   }
 }
 

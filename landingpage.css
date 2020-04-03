@@ -17,9 +17,11 @@ header {
   background-color: #eee;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 480px) {
   header {
     flex-wrap: wrap;
+    width: auto;
+    height: auto;
   }
 }
 
@@ -66,6 +68,9 @@ header {
     align-items: center;
     text-align: center;
     padding: 0 50px;
+  }
+  nav li {
+    padding-bottom: 5px;
   }
 }
 
@@ -148,9 +153,16 @@ li {
   margin: 0 auto;
 }
 
-#feature {
+#features {
   margin-top: 30px;
 }
+
+@media (max-width: 650px) {
+  #features {
+    margin-top: 0;
+  }
+}
+
 
 .grid {
   display: flex;
@@ -163,6 +175,12 @@ li {
   color: darkorange;
   height: 125px;
   width: 20vw;
+}
+
+@media (max-width: 550px) {
+  #features .icon {
+    display: none;
+  }
 }
 
 .fa {
@@ -182,6 +200,15 @@ li {
   height: 125px;
   width: 80vw;
   padding: 5px;
+}
+
+@media (max-width: 550px) {
+  #features .mesc {
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    height: 150px;
+  }
 }
 
 .mesc  h2 {
@@ -212,15 +239,18 @@ li {
   justify-content: center;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 500px) {
   #pricing {
     flex-direction: column;
+    align-items: center;
+    align-items: center;
   }
   .product {
     max-width: 300px;
     width: 100%;
     margin: 0 auto;
     margin-bottom: 10px;
+
   }
 }
 
@@ -243,6 +273,7 @@ li {
   text-transform: uppercase;
   font-weight: 700;
 }
+
 .product > h2 {
   margin-top: 15px;
 }

@@ -87,10 +87,6 @@ section li {
 section article code {
   display: block;
   text-align: left;
-  white-space: pre;
-  position: relative;
-  word-break: normal;
-  word-wrap: normal;
   line-height: 2;
   background-color: #f7f7f7;
   padding: 15px;
@@ -98,16 +94,17 @@ section article code {
   border-radius: 5px;
 }
 
+
 @media only screen and (max-width: 815px) {
   /* For mobile phones: */
-
   #navbar ul {
+    border: 1px solid;
     height: 207px;
-    width: 100%;
   }
 
   nav#navbar {
     background-color: white;
+    position: absolute;
     top: 0;
     padding: 0;
     margin: 0;
@@ -115,20 +112,25 @@ section article code {
     max-height: 275px;
     border: none;
     z-index: 1;
-    border-bottom: 1px solid;
+    border-bottom: 2px solid;
   }
 
-  #main-doc {
-    position: absolute;
-    margin-left: -10px;
+  main#main-doc {
+    position: relative;
+    margin-left: 0px;
     margin-top: 270px;
-    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  main#main-doc {
+    margin-left: -10px;
   }
 
   section article code {
     margin-left: -20px;
     width: 100%;
-    padding: 10px;
+    padding: 15px;
     padding-left: 10px;
     padding-right: 45px;
     min-width: 233px;
